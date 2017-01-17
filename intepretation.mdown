@@ -40,6 +40,9 @@ WHERE {field} {operator} {value}
 
 | Trigger | Interpretation | SQL |
 |---------|----------------|-----|
-|How many | How many       |COUNT|
-|Which | Filtered records | WHERE|
+|How many | Count records  |COUNT|
+|Which | Filter records   | WHERE|
+|When | Filter date records | WHERE {date_type} |
+
+
 

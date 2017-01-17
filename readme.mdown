@@ -1,2 +1,10 @@
 # Soprano 
-A library for interpreting NL into SQL
+A library for interpreting NL into SQL.
+
+## To Do (WIP)
+- [ ] Read in all existing table schemas and datatypes into memory 
+- [ ] Work with PostgreSQL syntax
+- [ ] Handle exceptions to ask for more information
+- [ ] Work with MySQL syntax
+- [ ] Work with SQL Server syntax
+
