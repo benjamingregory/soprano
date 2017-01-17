@@ -1,0 +1,2 @@
+# Soprano 
+A library for interpreting NL into SQL
