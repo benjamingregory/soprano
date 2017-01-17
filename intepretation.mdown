@@ -1,30 +1,29 @@
-- How many applications do we have...?
-		```
-		SELECT count(1)
-		FROM prod.applications
-		```
-	...created...
-		{Append}
-		```
-		WHERE createdat
-		```
-	...in the past month?
-		{Append}
-		```
-		> 
-		```
-	Full query
-		```
-		SELECT count(1)
-		FROM prod.applications
-		WHERE trunc(createdat) > dateadd(month, -1, current_date)
-		```
+## How many applications do we have...?
+```
+SELECT count(1)
+FROM prod.applications
+```
+...created...
+{Append}
+```
+WHERE createdat
+```
+...in the past month?
+{Append}
+```
+> 
+```
+Full query
+```
+SELECT count(1)
+FROM prod.applications
+WHERE trunc(createdat) > dateadd(month, -1, current_date)
+```
 
 
 
-How many applications do we have that were created in the past month?
-
-{Trigger} {table} do we have {field} {operator} {value}
+### How many applications do we have that were created in the past month?**
+### {Trigger} {table} do we have {field} {operator} {value}
 
 ```
 SELECT count(1)
@@ -39,8 +38,8 @@ WHERE {field} {operator} {value}
 ```
 
 
-| Trigger | SQL |
-|---------|-----|
-|How many |Count|
-|Which | |
+| Trigger | Interpretation | SQL |
+|---------|----------------|-----|
+|How many | How many       |COUNT|
+|Which | Filtered records | WHERE|
 
